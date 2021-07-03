@@ -1,0 +1,6 @@
+.Box {
+    display: flex;
+    width: 25%;
+    height: 200px;
+    cursor: pointer;
+}

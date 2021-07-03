@@ -1,0 +1,25 @@
+.coin {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    color: black;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+.coin-flip {
+    animation: flip 1s;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(180deg);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}

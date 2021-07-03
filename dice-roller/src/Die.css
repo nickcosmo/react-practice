@@ -1,0 +1,28 @@
+.Die {
+    display: inline-block;
+    font-size: 15rem;
+    color: rgb(158, 60, 204);
+    margin: 10px;
+}
+
+.Die-rolling {
+    animation: move 0.2s;
+}
+
+@keyframes move {
+    20% {
+        transform: translateX(-20px);
+    }
+    40% {
+        transform: translateX(20px);
+    }
+    60% {
+        transform: translateX(-20px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
