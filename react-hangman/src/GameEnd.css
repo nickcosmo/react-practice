@@ -1,4 +1,4 @@
-.Loser {
+.GameEnd {
     position: absolute;
     top: 0;
     left: 0;
@@ -7,7 +7,7 @@
     background-color: rgba(0, 0, 0, 0.12);
 }
 
-.Loser div {
+.GameEnd div {
     position: absolute;
     top: 30%;
     left: calc(50% - 150px);
@@ -21,11 +21,11 @@
     flex-direction: column;
 }
 
-.Loser button {
+.GameEnd button {
     width: auto;
 }
 
-.Loser h2 {
+.GameEnd h2 {
     font-size: 3rem;
     margin: 0;
 }

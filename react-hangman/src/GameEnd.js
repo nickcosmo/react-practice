@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './Loser.css';
+import './GameEnd.css';
 
-class Loser extends Component {
+class GameEnd extends Component {
     render() {
         return (
-            <div className="Loser">
+            <div className="GameEnd">
                 <div>
-                    <h2>Game Over!</h2>
+                    {this.props.winner ? <h2>You Win!</h2> : <h2>Game Over!</h2>}
                     <p>The correct word was: {this.props.word}</p>
                     <button onClick={this.props.restart}>Play Again</button>
                 </div>
@@ -15,4 +15,4 @@ class Loser extends Component {
     }
 }
 
-export default Loser;
+export default GameEnd;
