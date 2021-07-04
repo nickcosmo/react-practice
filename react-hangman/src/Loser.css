@@ -1,0 +1,31 @@
+.Loser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.Loser div {
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 150px);
+    width: 300px;
+    background-color: black;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Loser button {
+    width: auto;
+}
+
+.Loser h2 {
+    font-size: 3rem;
+    margin: 0;
+}
