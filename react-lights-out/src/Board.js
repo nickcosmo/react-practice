@@ -79,21 +79,19 @@ class Board extends Component {
         flipCell(x, y + 1);
 
         // win when every cell is turned off
-        // TODO: determine is the game has been won
+        // determine is the game has been won
         let check;
         for (let i = 0; i < 4; i++) {
             check = board[i].findIndex((cell) => cell === true);
-            console.log(check);
             if (check >= 0) break;
         }
-        let hasWon = check > 0 ? false : true;
+        let hasWon = check >= 0 ? false : true;
         this.setState({ board, hasWon });
     }
 
     /** Render game board or winning message. */
 
     render() {
-        // TODO
         // if the game is won, just show a winning msg & render nothing else
 
         // make table board

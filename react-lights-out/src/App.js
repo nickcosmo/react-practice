@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <h1>Board Game</h1>
+        <h1><span className="neon-orange">Lights</span><span className="neon-blue">Out</span></h1>
         <Board />
       </div>
     );
