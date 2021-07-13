@@ -55,13 +55,13 @@ class Hangman extends Component {
     }
 
     /** generateButtons: return array of letter buttons to render */
-    generateButtons() {
-        return 'abcdefghijklmnopqrstuvwxyz'.split('').map((ltr, i) => (
-            <button key={ltr + i} value={ltr} onClick={this.handleGuess} disabled={this.state.guessed.has(ltr)}>
-                {ltr}
-            </button>
-        ));
-    }
+    // generateButtons() {
+    //     return 'abcdefghijklmnopqrstuvwxyz'.split('').map((ltr, i) => (
+    //         <button key={ltr + i} value={ltr} onClick={this.handleGuess} disabled={this.state.guessed.has(ltr)}>
+    //             {ltr}
+    //         </button>
+    //     ));
+    // }
 
     // restart: restart the game by resetting state and getting new word
     restart() {
